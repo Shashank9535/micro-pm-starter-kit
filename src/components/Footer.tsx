@@ -35,9 +35,9 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="#" className="text-micropm-medium-gray hover:text-micropm-purple">
+                  <a href="#" className="text-micropm-medium-gray hover:text-micropm-purple">
                     Templates
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -46,19 +46,19 @@ const Footer = () => {
               <h4 className="font-semibold mb-4">Company</h4>
               <ul className="space-y-2">
                 <li>
-                  <Link to="#" className="text-micropm-medium-gray hover:text-micropm-purple">
+                  <a href="#" className="text-micropm-medium-gray hover:text-micropm-purple">
                     About
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to="#" className="text-micropm-medium-gray hover:text-micropm-purple">
+                  <a href="#" className="text-micropm-medium-gray hover:text-micropm-purple">
                     Blog
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to="#" className="text-micropm-medium-gray hover:text-micropm-purple">
+                  <a href="#" className="text-micropm-medium-gray hover:text-micropm-purple">
                     Contact
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -87,15 +87,15 @@ const Footer = () => {
             © {currentYear} MicroPM. All rights reserved.
           </p>
           <div className="flex space-x-6">
-            <Link to="#" className="text-micropm-medium-gray hover:text-micropm-purple text-sm">
+            <a href="#" className="text-micropm-medium-gray hover:text-micropm-purple text-sm">
               Terms
-            </Link>
-            <Link to="#" className="text-micropm-medium-gray hover:text-micropm-purple text-sm">
+            </a>
+            <a href="#" className="text-micropm-medium-gray hover:text-micropm-purple text-sm">
               Privacy
-            </Link>
-            <Link to="#" className="text-micropm-medium-gray hover:text-micropm-purple text-sm">
+            </a>
+            <a href="#" className="text-micropm-medium-gray hover:text-micropm-purple text-sm">
               Cookies
-            </Link>
+            </a>
           </div>
         </div>
       </div>
