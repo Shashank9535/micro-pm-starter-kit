@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -18,7 +19,7 @@ import {
   ChevronDown, 
   ChevronUp,
   Copy,
-  FilePdf
+  FileDown
 } from "lucide-react";
 
 const templateSections = [
@@ -540,7 +541,7 @@ const PRDBuilder = () => {
                   <Download size={16} className="mr-2" /> Download as Markdown
                 </Button>
                 <Button onClick={downloadPDF} variant="outline" className="micropm-btn-outline flex-1">
-                  <FilePdf size={16} className="mr-2" /> Export as PDF
+                  <FileDown size={16} className="mr-2" /> Export as PDF
                 </Button>
                 <Button onClick={copyToClipboard} variant="outline" className="micropm-btn-outline flex-1">
                   <Copy size={16} className="mr-2" /> Copy to Clipboard
