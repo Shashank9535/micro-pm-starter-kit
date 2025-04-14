@@ -1,3 +1,4 @@
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -50,8 +51,10 @@ const Tools = () => {
                       </ul>
                     </CardContent>
                     <CardFooter>
-                      <Button className="w-full micropm-btn-outline">
-                        View Template <ArrowRight className="ml-2 h-4 w-4" />
+                      <Button className="w-full micropm-btn-outline" asChild>
+                        <Link to="/tools/prd-builder">
+                          Open Tool <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
                       </Button>
                     </CardFooter>
                   </Card>
@@ -73,8 +76,10 @@ const Tools = () => {
                       </ul>
                     </CardContent>
                     <CardFooter>
-                      <Button className="w-full micropm-btn-outline">
-                        View Template <ArrowRight className="ml-2 h-4 w-4" />
+                      <Button className="w-full micropm-btn-outline" asChild>
+                        <Link to="/tools/roadmap-board">
+                          Open Tool <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
                       </Button>
                     </CardFooter>
                   </Card>
@@ -96,8 +101,10 @@ const Tools = () => {
                       </ul>
                     </CardContent>
                     <CardFooter>
-                      <Button className="w-full micropm-btn-outline">
-                        View Template <ArrowRight className="ml-2 h-4 w-4" />
+                      <Button className="w-full micropm-btn-outline" asChild>
+                        <Link to="/tools/user-personas">
+                          Open Tool <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
                       </Button>
                     </CardFooter>
                   </Card>
@@ -119,8 +126,10 @@ const Tools = () => {
                       </ul>
                     </CardContent>
                     <CardFooter>
-                      <Button className="w-full micropm-btn-outline">
-                        View Template <ArrowRight className="ml-2 h-4 w-4" />
+                      <Button className="w-full micropm-btn-outline" asChild>
+                        <Link to="/tools/interview-survey-templates">
+                          Open Tool <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
                       </Button>
                     </CardFooter>
                   </Card>
@@ -142,8 +151,10 @@ const Tools = () => {
                       </ul>
                     </CardContent>
                     <CardFooter>
-                      <Button className="w-full micropm-btn-outline">
-                        View Template <ArrowRight className="ml-2 h-4 w-4" />
+                      <Button className="w-full micropm-btn-outline" asChild>
+                        <Link to="/tools/feedback-inbox">
+                          Open Tool <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
                       </Button>
                     </CardFooter>
                   </Card>
@@ -159,6 +170,13 @@ const Tools = () => {
                     <CardContent className="pb-0">
                       <ZapierForm />
                     </CardContent>
+                    <CardFooter className="pt-0">
+                      <Button className="w-full micropm-btn-outline mt-4" asChild>
+                        <Link to="/tools/weekly-checkin">
+                          Open Tool <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
+                      </Button>
+                    </CardFooter>
                   </Card>
                 </div>
               </TabsContent>
@@ -182,8 +200,10 @@ const Tools = () => {
                       </ul>
                     </CardContent>
                     <CardFooter>
-                      <Button className="w-full micropm-btn-outline">
-                        View Template <ArrowRight className="ml-2 h-4 w-4" />
+                      <Button className="w-full micropm-btn-outline" asChild>
+                        <Link to="/tools/prd-builder">
+                          Open Tool <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
                       </Button>
                     </CardFooter>
                   </Card>
@@ -209,8 +229,10 @@ const Tools = () => {
                       </ul>
                     </CardContent>
                     <CardFooter>
-                      <Button className="w-full micropm-btn-outline">
-                        View Template <ArrowRight className="ml-2 h-4 w-4" />
+                      <Button className="w-full micropm-btn-outline" asChild>
+                        <Link to="/tools/roadmap-board">
+                          Open Tool <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
                       </Button>
                     </CardFooter>
                   </Card>
@@ -236,8 +258,10 @@ const Tools = () => {
                       </ul>
                     </CardContent>
                     <CardFooter>
-                      <Button className="w-full micropm-btn-outline">
-                        View Template <ArrowRight className="ml-2 h-4 w-4" />
+                      <Button className="w-full micropm-btn-outline" asChild>
+                        <Link to="/tools/user-personas">
+                          Open Tool <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
                       </Button>
                     </CardFooter>
                   </Card>
@@ -263,8 +287,10 @@ const Tools = () => {
                       </ul>
                     </CardContent>
                     <CardFooter>
-                      <Button className="w-full micropm-btn-outline">
-                        View Template <ArrowRight className="ml-2 h-4 w-4" />
+                      <Button className="w-full micropm-btn-outline" asChild>
+                        <Link to="/tools/interview-survey-templates">
+                          Open Tool <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
                       </Button>
                     </CardFooter>
                   </Card>
@@ -290,8 +316,10 @@ const Tools = () => {
                       </ul>
                     </CardContent>
                     <CardFooter>
-                      <Button className="w-full micropm-btn-outline">
-                        View Template <ArrowRight className="ml-2 h-4 w-4" />
+                      <Button className="w-full micropm-btn-outline" asChild>
+                        <Link to="/tools/feedback-inbox">
+                          Open Tool <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
                       </Button>
                     </CardFooter>
                   </Card>
@@ -307,6 +335,13 @@ const Tools = () => {
                     <CardContent className="pb-0">
                       <ZapierForm />
                     </CardContent>
+                    <CardFooter className="pt-0">
+                      <Button className="w-full micropm-btn-outline mt-4" asChild>
+                        <Link to="/tools/weekly-checkin">
+                          Open Tool <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
+                      </Button>
+                    </CardFooter>
                   </Card>
                 </div>
               </TabsContent>
