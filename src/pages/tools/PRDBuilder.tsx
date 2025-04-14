@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -9,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "@/components/ui/use-toast";
+import { exportToPDF } from "@/utils/pdfExport";
 import { 
   FileText, 
   Save, 
@@ -17,7 +17,8 @@ import {
   Trash, 
   ChevronDown, 
   ChevronUp,
-  Copy
+  Copy,
+  FilePdf
 } from "lucide-react";
 
 const templateSections = [
@@ -257,6 +258,24 @@ const PRDBuilder = () => {
     toast({
       title: "PRD downloaded",
       description: "Your PRD has been downloaded as a Markdown file"
+    });
+  };
+
+  const downloadPDF = () => {
+    if (!prdState.title.trim()) {
+      toast({
+        title: "PRD title required",
+        description: "Please provide a title for your PRD before downloading",
+        variant: "destructive"
+      });
+      return;
+    }
+
+    exportToPDF(prdState, templateSections);
+    
+    toast({
+      title: "PDF downloaded",
+      description: "Your PRD has been downloaded as a PDF file"
     });
   };
 
@@ -519,6 +538,9 @@ const PRDBuilder = () => {
                 </Button>
                 <Button onClick={downloadPRD} variant="outline" className="micropm-btn-outline flex-1">
                   <Download size={16} className="mr-2" /> Download as Markdown
+                </Button>
+                <Button onClick={downloadPDF} variant="outline" className="micropm-btn-outline flex-1">
+                  <FilePdf size={16} className="mr-2" /> Export as PDF
                 </Button>
                 <Button onClick={copyToClipboard} variant="outline" className="micropm-btn-outline flex-1">
                   <Copy size={16} className="mr-2" /> Copy to Clipboard
